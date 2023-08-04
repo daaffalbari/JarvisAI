@@ -34,10 +34,10 @@ export default function WelcomeScreen() {
       {/* start button */}
       <TouchableOpacity
         onPress={() => navigation.navigate('Home')}
-        className="bg-emerald-600 mx-5 p-4 rounded-2xl">
+        className="bg-emerald-500 mx-5 p-4 rounded-2xl">
         <Text
           style={{fontSize: wp(6)}}
-          className="text-center font-bold text-white">
+          className="text-center font-bold text-white tracking-wider">
           Get Started
         </Text>
       </TouchableOpacity>
