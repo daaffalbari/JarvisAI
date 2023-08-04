@@ -1,6 +1,5 @@
 import {View, Text, ScrollView, Image} from 'react-native';
 import React from 'react';
-
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -11,12 +10,12 @@ export default function Features() {
     <ScrollView
       style={{height: hp(60)}}
       bounces={false}
-      showsVerticalScrollIndicator={false}
+      showsVerticalScrollIndicator={true}
       className="space-y-4">
       <Text style={{fontSize: wp(6.5)}} className="font-semibold text-gray-700">
         Features
       </Text>
-      <View className="bg-emerald-200 p-4 rounded-xl space-y-2">
+      <View className="bg-teal-200 p-4 rounded-xl space-y-2">
         <View className="flex-row items-center space-x-1">
           <Image
             className="rounded-ful"
@@ -54,7 +53,7 @@ export default function Features() {
           descriptions, expanding the boundaries of visual creativity.
         </Text>
       </View>
-      <View className="bg-cyan-200 p-4 rounded-xl space-y-2">
+      <View className="bg-teal-200 p-4 rounded-xl space-y-2">
         <View className="flex-row items-center space-x-1">
           <Image
             className="rounded-ful"
@@ -64,11 +63,13 @@ export default function Features() {
           <Text
             style={{fontSize: wp(4.8)}}
             className="font-semibold text-gray-700">
-            Smart AI
+            Jarvis AI
           </Text>
         </View>
 
-        <Text style={{fontSize: wp(3.8)}} className="text-gray-700 font-medium">
+        <Text
+          style={{fontSize: wp(3.8)}}
+          className="text-gray-700 font-medium pb-2 ">
           A powerful voice assistant with the abilities of ChatGPT and Dall-E,
           providing you the best of both worlds.
         </Text>
